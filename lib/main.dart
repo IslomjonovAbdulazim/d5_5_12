@@ -32,15 +32,6 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: AnimatedContainer(
-          height: 200,
-          width: 200,
-          color: Colors.yellow,
-          duration: Duration(milliseconds: 500),
-        ),
-      ),
-    );
+    return Scaffold();
   }
 }
