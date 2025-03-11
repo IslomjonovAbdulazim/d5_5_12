@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     DevicePreview(
-      enabled: true,
+      enabled: false,
       builder: (context) => MyApp(),
     ),
   );
@@ -32,6 +32,15 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Center(
+        child: AnimatedContainer(
+          height: 200,
+          width: 200,
+          color: Colors.yellow,
+          duration: Duration(milliseconds: 500),
+        ),
+      ),
+    );
   }
 }
